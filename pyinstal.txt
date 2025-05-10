@@ -1,0 +1,6 @@
+pyinstaller --onefile --windowed --icon=yy.ico --name=Yi main.py --hidden-import=kivymd.icon_definitions --hidden-import=kivymd.uix.card --hidden-import=kivymd.uix.button --hidden-import=kivymd.uix.label --hidden-import=kivymd.uix.screen --add-data "NotoSansSC-Black.ttf;." --add-data "muyu.png;." --add-data "muyu.mp3;."
+
+buildozer:
+cd /mnt/d/work_on_github/kivy_Fortune_Telling
+buildozer android clean
+buildozer android debug
